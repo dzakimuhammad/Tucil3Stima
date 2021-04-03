@@ -49,11 +49,17 @@ def parse(nama_file):
     for nodeid in tetangga(i, adj):
       distance = sqrt((coor[i]["x"]-coor[nodeid]["x"])**2 + (coor[i]["y"]-coor[nodeid]["y"])**2)
       ttg.append((node[nodeid], distance))
+      adj[i][nodeid] = distance
     ttg = sorted(ttg, key=itemgetter(1))
     listnode[node[i]] = ttg
   
-  return listnode
+  return listnode, node, coor, adj
 
+# access parsed
+# parsed[0] = graph
+# parsed[1] = list node (string)
+# parsed[2] = list coordinate
+# parsed[3] = adj matrix with distance
 # tes
 '''
 parsed = parse("tes.txt")
