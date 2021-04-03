@@ -23,13 +23,7 @@ def drawgraph(parsed, path = None):
         pathcolor = getedgefrompath(path)
     
     # iterasi buat assign graf ke visualizer
-    for i in range(len(adj)):
-        # assign warna node
-        if colored and node[i] in path:
-            nodecolor.append("red")
-        else:
-            nodecolor.append("white")
-        
+    for i in range(len(adj)):        
         # assign posisi graf dari input ke visualizer
         pos[node[i]] = (coor[i]["x"], coor[i]["y"])
         for j in range(len(adj[i])):
@@ -43,6 +37,13 @@ def drawgraph(parsed, path = None):
                 # assign edge ke visualizer
                 G.add_edge(node[i],node[j])
                 edgelabel[(node[i], node[j])] = '%.2f'%adj[i][j]
+    
+    for node in G:
+        # assign warna node
+        if colored and node in path:
+            nodecolor.append("red")
+        else:
+            nodecolor.append("white")
                 
     pos = nx.planar_layout(G)
     nx.draw_planar(G, with_labels=True, node_color = nodecolor, edge_color = edgecolor, edgecolors = "black")
