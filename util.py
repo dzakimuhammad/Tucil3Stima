@@ -45,12 +45,11 @@ def parse(nama_file):
   listnode = {}
 
   for i in range(len(node)):
-    ttg = []
+    ttg = {}
     for nodeid in tetangga(i, adj):
       distance = sqrt((coor[i]["x"]-coor[nodeid]["x"])**2 + (coor[i]["y"]-coor[nodeid]["y"])**2)
-      ttg.append((node[nodeid], distance))
+      ttg[node[nodeid]] = distance
       adj[i][nodeid] = distance
-    ttg = sorted(ttg, key=itemgetter(1))
     listnode[node[i]] = ttg
   
   return listnode, node, coor, adj
