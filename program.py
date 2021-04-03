@@ -8,6 +8,9 @@ def start(filename = None):
     
     global parsed
     parsed = util.parse(filename)
+
+    print()
+    print("Visualisasi graf masukan (bobot dalam km): ")
     graphdrawer.drawgraph(parsed)
 
 def process(startNode = None, goalNode = None):
@@ -19,6 +22,10 @@ def process(startNode = None, goalNode = None):
     searchPath = astar.astar_search(parsed, heuristic, startNode, goalNode)
 
     if searchPath is not None:
+        print()
+        print("Hasil: ")
+        distance = util.getdistancefrompath(searchPath, parsed)
+        print("Jarak terpendek dari", startNode, "dan", goalNode, "adalah", '%.2f'%distance, "km")
         graphdrawer.drawgraph(parsed, searchPath)
     else:
         print("No path found")

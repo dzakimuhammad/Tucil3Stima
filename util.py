@@ -8,6 +8,20 @@ def tetangga(id, graph):
       ttg.append(i)
   return ttg
 
+def getdistancefrompath(path, parsed):
+  out = []
+  node = parsed[1]
+  adj = parsed[3]
+  distance = 0.0
+
+  for i in range(len(path)-1):
+    out.append((node.index(path[i]), node.index(path[i+1])))
+  
+  for edge in out:
+    distance += adj[edge[0]][edge[1]]
+  
+  return distance
+
 def parse(nama_file):
   file = open(nama_file, "r")
   
