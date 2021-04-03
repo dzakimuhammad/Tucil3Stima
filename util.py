@@ -1,5 +1,4 @@
 from math import sqrt
-from operator import itemgetter
 
 def tetangga(id, graph):
   ttg = []
