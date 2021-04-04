@@ -78,6 +78,7 @@ def parse(nama_file):
       adj[i][nodeid] = distance
     listnode[node[i]] = ttg
   
+  file.close()
   return listnode, node, coor, adj
 
 # access parsed
