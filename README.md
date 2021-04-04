@@ -24,6 +24,32 @@ melalui terminal dengan perintah **pip install *keyword***
 1. matplotlib
 2. networkx
 
+## Contoh isi file
+Baris pertama adalah jumlah simpul N
+
+Baris kedua sampai N+1 adalah nama-nama simpul (tanpa spasi) beserta koordinatnya (dalam latitude dan longitude)
+
+Baris sisanya merupakan matriks ketetanggaan yang sesuai urutan simpul di atasnya.
+```
+8
+SimpangTuguAsiaAfrika -6.921210 107.607689
+MuseumAsiaAfrika -6.921023 107.609848
+BragaCityWalk -6.916968 107.609178
+MercureCityCentre -6.923878 107.611800
+SudirmanStreetMarket -6.920395 107.600530
+PendopoKota -6.922503 107.607066
+PasarBaru -6.917585 107.604353
+BatagorKingsley -6.919173 107.615111
+0 1 0 1 1 1 1 0
+1 0 1 1 0 0 0 0
+0 1 0 0 0 0 0 1
+1 1 0 0 0 1 0 0
+1 0 0 0 0 0 1 0
+1 0 0 1 0 0 0 0
+1 0 0 0 1 0 0 0
+0 0 1 0 0 0 0 0
+```
+
 ## Cara Menggunakan Program:
 1. Buka terminal, arahkan ke direktori tempat program disimpan yaitu pada folder Tucil3Stima.
 2. Jalankan perintah berikut untuk membuka web lokal berbasis Jupyter.
