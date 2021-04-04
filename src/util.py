@@ -1,4 +1,17 @@
-from math import sqrt
+from math import sqrt, cos, sin, pi, asin
+
+def haversine(pos1, pos2):
+  # pos type
+  # {x:int, y:int}
+  # x and y must be latitude and longitude
+
+  # reference: https://en.wikipedia.org/wiki/Haversine_formula
+  r = 6371 # jari2 bumi dalam km
+  deg = pi/180
+  dlat = (pos2["x"]-pos1["x"])*deg
+  dlon = (pos2["y"]-pos1["y"])*deg
+  akar = sin(dlat/2)**2 + cos(pos2["x"]*deg) * cos(pos1["x"]*deg) * sin(dlon/2)**2
+  return 2*r*asin(sqrt(akar))
 
 def tetangga(id, graph):
   ttg = []
@@ -60,7 +73,7 @@ def parse(nama_file):
   for i in range(len(node)):
     ttg = {}
     for nodeid in tetangga(i, adj):
-      distance = sqrt((coor[i]["x"]-coor[nodeid]["x"])**2 + (coor[i]["y"]-coor[nodeid]["y"])**2)
+      distance = haversine(coor[nodeid], coor[i])
       ttg[node[nodeid]] = distance
       adj[i][nodeid] = distance
     listnode[node[i]] = ttg

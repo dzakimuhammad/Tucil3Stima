@@ -1,4 +1,5 @@
 from math import sqrt
+from util import haversine
 
 def heuristics_distance(parsed, start_node, goal_node):
     for i in range(len(parsed[1])):
@@ -9,7 +10,7 @@ def heuristics_distance(parsed, start_node, goal_node):
     goal_dist = []
     h={}
     for i in range(len(parsed[1])):
-        goal_dist.append(sqrt((parsed[2][i]["x"]-parsed[2][end]["x"])**2 + (parsed[2][i]["y"]-parsed[2][end]["y"])**2))
+        goal_dist.append(haversine(parsed[2][end],parsed[2][i]))
         h[parsed[1][i]] = goal_dist[i]
     return h
 
