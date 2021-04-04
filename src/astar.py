@@ -1,6 +1,6 @@
 from util import haversine
 
-def heuristics_distance(parsed, start_node, goal_node):
+def heuristics_distance(parsed, goal_node):
     for i in range(len(parsed[1])):
         # cari indeks simpul tujuan
         if parsed[1][i] == goal_node:
