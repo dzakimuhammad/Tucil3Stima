@@ -61,6 +61,10 @@ jupyter-lab
 5. Input lokasi file txt uji ketika program meminta input, beberapa data uji txt tersedia dalam folder test (input ../test/*namafile*).
 6. Program akan berjalan meminta input pengguna, menampilkan peta berbentuk graf berbobot lalu menampilkan lintasan terpendek dari simpul awal ke simpul tujuan sesuai algoritma A* dan menghitung jaraknya.
 
+### Exception Handling
+Apabila terjadi Exception saat program mencoba menampilkan graf, cobalah untuk mengganti tipe graf yang akan digambarkan pada sel berikut.
+![image](https://user-images.githubusercontent.com/8206338/113501373-bdd87780-954e-11eb-878c-0b03292c0f38.png)
+
 ### Alternatif Penggunaan Program
 1. Buka terminal, arahkan ke direktori tempat program disimpan yaitu pada folder Tucil3Stima/src.
 2. Jalankan perintah berikut.
