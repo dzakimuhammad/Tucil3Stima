@@ -1,4 +1,3 @@
-from math import sqrt
 from util import haversine
 
 def heuristics_distance(parsed, start_node, goal_node):
