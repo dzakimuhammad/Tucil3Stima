@@ -19,7 +19,7 @@ def process(startNode = None, goalNode = None):
         startNode = input("Simpul awal: ")
         goalNode = input("Simpul tujuan: ")
     
-    heuristic = astar.heuristics_distance(parsed, startNode, goalNode)
+    heuristic = astar.heuristics_distance(parsed, goalNode)
     searchPath = astar.astar_search(parsed, heuristic, startNode, goalNode)
 
     if searchPath is not None:
