@@ -13,6 +13,14 @@ Tugas Kecil 3 Strategi Algoritma : Implementasi Algoritma A* untuk Menentukan Li
 ## Deskripsi Program:
 Program ini dibuat untuk menentukan lintasan terpendek antara dua titik pada suatu graf yang menyatakan peta menggunakan algoritma A*.
 
+
+## Algoritma A*:
+Algoritma A* adalah algoritma pencarian lintasan terpendek yang merupakan hasil gabungan antara algoritma Uniform Cost Search (UCS) dan Greedy Best First Search. Ide dari algoritma A* adalah menghindari untuk memperluas lintasan yang sudah tidak minimum. 
+
+Fungsi evaluasi pada tiap simpul yang digunakan dalam algoritma A* ini adalah f(n) = g(n) + h(n), dengan g(n) adalah jarak tempuh dari simpul awal hingga simpul n dan h(n) adalah jarak lurus dari simpul n ke simpul tujuan. Dengan begitu f(n) menunjukkan perkiraan jarak dari simpul awal ke simpul tujuan melalui simpul n. 
+
+Pada algoritma A* simpul dengan nilai f(n) terkecil akan diperluas secara melebar (ekspansi simpul tetangga) untuk dievaluasi nilai f(n) tiap simpul tetangganya. Kemudian dari simpul-simpul yang belum dikunjungi akan dicari lagi simpul f(n) terkecil untuk dilakukan ekspansi yang sama. Pengunjungan simpul dilakukan dengan cara yang sama hingga simpul tujuan dikunjungi.
+
 ## Instalasi Modul:
 Program ini menggunakan bahasa pemrograman Python sehingga untuk menjalankannya diperlukan untuk menginstalasi Python terlebih dahulu melalui laman *https://www.python.org/downloads/*. Selain itu diperlukan juga untuk menginstalasi Jupyter Notebook untuk menjalankan file IPython Notebook. Panduan instalasi Jupyter Notebook dapat dilihat pada laman *https://jupyter.org/install*.
 
