@@ -40,7 +40,6 @@ def setgraphtype(tipe):
         # 2 = spectral
         # 3 = spring
         # 4 = shell
-        # 5 = random
         name = ["default", "planar", "circular", "spectral", "spring", "shell"]
         global type
         type = tipe
