@@ -62,7 +62,7 @@ jupyter-lab
 6. Program akan berjalan meminta input pengguna, menampilkan peta berbentuk graf berbobot lalu menampilkan lintasan terpendek dari simpul awal ke simpul tujuan sesuai algoritma A* dan menghitung jaraknya.
 
 ### Exception Handling
-Apabila terjadi Exception saat program mencoba menampilkan graf, cobalah untuk mengganti tipe graf yang akan digambarkan pada sel berikut.
+Apabila terjadi Exception saat program mencoba menampilkan graf, cobalah untuk mengganti tipe graf yang akan digambarkan pada sel berikut. Setelah diubah, ulangi langkah penggunaan program dari nomor 4.
 ![image](https://user-images.githubusercontent.com/8206338/113501373-bdd87780-954e-11eb-878c-0b03292c0f38.png)
 
 ### Alternatif Penggunaan Program
