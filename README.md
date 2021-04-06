@@ -64,7 +64,7 @@ BatagorKingsley -6.919173 107.615111
 ```
 jupyter-lab
 ```
-3. Buka folder Tucil3.ipynb yang terdapat pada folder src.
+3. Buka file Tucil3.ipynb yang terdapat pada folder src.
 4. Jalankan program sesuai dengan langkah-langkah yang dijelaskan pada file tersebut.
 5. Input lokasi file txt uji ketika program meminta input, beberapa data uji txt tersedia dalam folder test (input ../test/*namafile*).
 6. Program akan berjalan meminta input pengguna, menampilkan peta berbentuk graf berbobot lalu menampilkan lintasan terpendek dari simpul awal ke simpul tujuan sesuai algoritma A* dan menghitung jaraknya.
