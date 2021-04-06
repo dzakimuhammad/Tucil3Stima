@@ -71,7 +71,7 @@ jupyter-lab
 
 ### Exception Handling
 Apabila terjadi Exception saat program mencoba menampilkan graf, cobalah untuk mengganti tipe graf yang akan digambarkan pada sel berikut. Setelah diubah, ulangi langkah penggunaan program dari nomor 4.
-![image](https://user-images.githubusercontent.com/8206338/113501373-bdd87780-954e-11eb-878c-0b03292c0f38.png)
+![image](https://user-images.githubusercontent.com/8206338/113729713-76561500-9721-11eb-8693-555ca7ef55d2.png)
 
 ### Alternatif Penggunaan Program
 1. Buka terminal, arahkan ke direktori tempat program disimpan yaitu pada folder Tucil3Stima/src.
@@ -81,3 +81,8 @@ python3 main.py
 ```
 3. Program akan meminta nama file. Jika terbaca, akan muncul pop-up gambar graf terkait. Jika sudah selesai melihat-lihat, tutup pop-up tersebut dan program akan meminta simpul awal dan simpul tujuan.
 4. Program akan menuliskan jarak mininum pada simpul tersebut dan menampilkan Graf lagi tetapi dengan jalur yang sudah diwarnai sesuai dengan hasil dari Algoritma A*.
+
+### Exception Handling untuk Program Alternatif
+Sama seperti exception handling untuk program utama, Anda hanya cukup mengubah tipe visualisasi graf saja. Caranya adalah dengan mengubah value dari tipe pada **main.py**.
+![image](https://user-images.githubusercontent.com/8206338/113729658-69392600-9721-11eb-9f81-e6eeb77a5d8c.png)
+
